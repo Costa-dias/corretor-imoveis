@@ -1,0 +1,19 @@
+{
+  "summary": "Smoke tested backend + frontend after WhatsApp phone fix, property photo replacement, and broker photo removal. All requested checks pass.",
+  "tested_scope": ["backend", "frontend", "auth", "integration"],
+  "passed": [
+    "GET /api/broker returns phone='5513982076346', name='Joel Carlos', creci='CRECI 233.230-F', city='Praia Grande - SP', hours and price_from populated",
+    "GET /api/properties returns exactly 3 items with titles Apto Boqueirão · 1 dormitório, Apto Tupi · 1 dormitório, Casa em Condomínio · Samambaia; Boqueirão price=250000; all image_url on customer-assets.emergentagent.com",
+    "Homepage renders 3 property cards with correct titles",
+    "hero-cta-whatsapp href starts with https://wa.me/5513982076346 (target=_blank)",
+    "broker-whatsapp-btn href starts with https://wa.me/5513982076346",
+    "PropertyDetailDialog whatsapp-btn href starts with https://wa.me/5513982076346, target=_blank",
+    "broker-section contains 0 <img> tags (broker photo removed)",
+    "POST /api/auth/login with joel@corretorpraiagrande.com / Corretor@2026 returns 200 with access_token and user"
+  ],
+  "failed": [],
+  "action_items": [],
+  "success_rate": {"backend": "100%", "frontend": "100%"},
+  "retest_needed": false,
+  "full_testing_deferred": true
+}

@@ -1,0 +1,79 @@
+{
+  "theme": "ARCHETYPE 5: LUXURY (Premium, Depth, Elegance) - Light Mode Optimized",
+  "typography": {
+    "headings": {
+      "font_family": "'Playfair Display', serif",
+      "weights": ["400", "500", "600"],
+      "usage": "Used for all main headings (H1, H2, H3), property titles, and editorial quotes. Must use tight tracking (tracking-tight) to feel sophisticated and 'Awwwards-level' editorial."
+    },
+    "body": {
+      "font_family": "'Manrope', sans-serif",
+      "weights": ["300", "400", "500"],
+      "usage": "Used for property details, descriptions, UI elements, and admin dashboard. Should have a clean, sterile contrast to the ornate serif."
+    },
+    "instructions_to_main_agent": "Import these fonts via Google Fonts in index.css: @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500&family=Playfair+Display:wght@400;500;600&display=swap'); Apply them in tailwind.config.js."
+  },
+  "colors": {
+    "background": {
+      "primary": "#F7F5F0",
+      "secondary": "#FFFFFF",
+      "inverse": "#121212"
+    },
+    "text": {
+      "primary": "#141414",
+      "secondary": "#5C5C5C",
+      "inverse": "#F7F5F0"
+    },
+    "accent": {
+      "primary": "#8C7B65",
+      "secondary": "#B09E87",
+      "whatsapp": "#25D366"
+    },
+    "borders": "#E6E1D6",
+    "instructions_to_main_agent": "The site must use 'Soft Bone White' (#F7F5F0) instead of pure white for the main background to convey an 'old money' editorial feel. High contrast text (#141414) is mandatory. Do not use generic blue or purple. The admin dashboard can use more sterile white (#FFFFFF) for utility but should retain the accent colors."
+  },
+  "grids_and_layouts": {
+    "marketing_pages": "Use 'MODE A: THE TETRIS GRID'. Prioritize asymmetry. Use large imagery taking up 60-80% of the viewport. Do not perfectly center everything. Align text blocks optically with generous negative space (e.g., py-24, gap-12).",
+    "property_cards": "Cardless design or 1px subtle borders (border-[#E6E1D6]). High-aspect ratio images (e.g., aspect-[3/4] or aspect-square) to look like an art gallery, not a Craigslist ad. Details below the image: Price in Serif, Location in small uppercase sans-serif.",
+    "admin_dashboard": "Use 'MODE B: HIGH DENSITY GRID'. Standard sidebar/header layout. Use Shadcn components heavily here to ensure function over form, but style the active states with the #8C7B65 accent color."
+  },
+  "visual_enhancers": {
+    "surfaces": "For sticky headers, use 'Glassmorphism (Crystal)' with backdrop-blur-xl and bg-[#F7F5F0]/70. Never use completely transparent headers. For property detail modals, use Solid Backgrounds to ensure readability.",
+    "motion": "Use smooth, slow transitions. Property images should subtly scale up on hover (duration-700 ease-out). Page elements should stagger in on mount. Avoid 'bouncy' animations. Everything must feel grounded and heavy.",
+    "borders_and_shadows": "Rely on 1px solid borders rather than drop shadows for structural elements. If shadows are needed (e.g., for dropdowns), use very diffuse, elegant shadows: shadow-[0_20px_40px_rgba(0,0,0,0.05)]."
+  },
+  "component_guidelines": {
+    "hero_section": "Editorial style. Large background or side-by-side split. If background image is used, overlay must be max bg-black/40. Headline must be massive (text-5xl md:text-7xl) serif.",
+    "property_listing_grid": "Grid with 1-3 columns. Images must be high-quality and unconstrained. On hover, the 'WhatsApp' contact button can gently fade in or slide up.",
+    "whatsapp_button": "Do not make it generic green unless strictly required by client. A sleek dark pill or minimal outline button with a WhatsApp icon is preferred to keep the luxury vibe.",
+    "admin_forms": "Use Shadcn Input, Form, Button, Table. Clean, well-spaced, standard validation.",
+    "icons": "Use 'lucide-react' with a consistent stroke width (1.5 or 1). Do not use emojis."
+  },
+  "image_urls": {
+    "hero_main": {
+      "url": "https://images.unsplash.com/photo-1721815693498-cc28507c0ba2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBtb2Rlcm4lMjBob3VzZSUyMGV4dGVyaW9yfGVufDB8fHx8MTc4NDA0MTU2NHww&ixlib=rb-4.1.0&q=85",
+      "description": "Two-story luxury modern house. Use for hero section or featured listing."
+    },
+    "property_exterior_1": {
+      "url": "https://images.pexels.com/photos/30211366/pexels-photo-30211366.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Stylish modern white house exterior with palm trees."
+    },
+    "property_exterior_2": {
+      "url": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBtb2Rlcm4lMjBob3VzZSUyMGV4dGVyaW9yfGVufDB8fHx8MTc4NDA0MTU2NHww&ixlib=rb-4.1.0&q=85",
+      "description": "White and brown concrete building, highly architectural."
+    },
+    "property_interior_1": {
+      "url": "https://images.unsplash.com/photo-1658218635253-64728f6234be?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwxfHxwcmVtaXVtJTIwYXBhcnRtZW50JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzg0MDQxNTY0fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Luxury living room interior."
+    },
+    "property_interior_2": {
+      "url": "https://images.unsplash.com/photo-1638454668466-e8dbd5462f20?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHw0fHxwcmVtaXVtJTIwYXBhcnRtZW50JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzg0MDQxNTY0fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Premium bedroom interior."
+    },
+    "broker_portrait": {
+      "url": "https://images.unsplash.com/photo-1718209881007-c0ecdfc00f9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwzfHxlbGVnYW50JTIwYnVzaW5lc3MlMjBwb3J0cmFpdHxlbnwwfHx8fDE3ODQwNDE1Nzd8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Elegant business portrait for the 'About the Broker' section."
+    }
+  },
+  "GENERAL_UI_UX_DESIGN_GUIDELINES": "1. All interactive elements MUST include data-testid. 2. Do not center everything; use left-aligned typography for reading flow. 3. Add transitions on hover but exclude transforms from generic 'transition-all'. 4. Never use 🤖🧠 etc emojis. 5. Portuguese language copy only. 6. Real estate is about emotion: emphasize photography and negative space."
+}
